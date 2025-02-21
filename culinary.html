@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Rasa Jawa</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'Zuume Rough';
+            src: url('font/fontspring-demo-zuumerough-bold.otf') format('opentype');
+        }
+        body {
+            font-family: 'Zuume Rough', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#571010] p-4">
+    <nav class="p-4 relative z-50">
+        <div class="container mx-auto flex justify-end items-center font-[Montserrat] font-bold text-white text-2xl">
+            <button id="menu-toggle" class="text-[#E9D8B3] md:hidden focus:outline-none">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <ul id="menu" class="hidden md:flex md:space-x-4 md:bg-transparent md:p-0 absolute z-50 justify-items-center items-center top-16 left-0 w-full bg-[#571010] p-4 md:relative md:top-0 md:w-auto">
+                <li><a href="index.html" class="block text-white p-2 md:hover:bg-transparent">Home</a></li>
+                <li><a href="culinary.html" class="block text-white p-2 md:hover:bg-transparent">Culinary</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    </script>
+    <div class="justifyi-center items-center">
+        <h1 class="relative rounded-3xl w-full text-center text-[#571010] pt-3 pb-10 bg-[#E9D8B3] text-7xl">OREM OREM</h1>
+        <h1 class="relative rounded-3xl text-end text-[#E9D8B3] pt-3 pb-45 bg-[#E9D8B3] text-7xl -mt-13 ml-65">.</h1>
+        <img class="absolute w-5/7 left-[16%] top-[17%] drop-shadow-[-13px_11px_10px_rgba(0,0,0,0.85)]" src="asset/orem.png">
+    </div>
+
+    <div class="justify-items-center items-center">
+        <h1 class="font-[Montserrat] font-bold text-[#E9D8B3] text-3xl mt-[15%]">KULINER BERCERITA</h1>
+        <div class="flex justify-center items-center mt-5">
+            <div class="w-full max-w-3xl aspect-w-16 aspect-h-9">
+                <iframe class="w-full h-full rounded-lg shadow-lg"
+                    src="https://www.youtube.com/embed/jOMoOzjRNTk?si=7w3QIm73gfXe0ay6"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <p class="font-[Montserrat] text-justify text-md p-7 font-bold text-white"><span class="text-[#E9D8B3]">Orem-Orem</span> adalah hidangan khas Malang yang lahir di masa penjajahan Jepang, ketika bahan makanan sulit didapat dan mahal. Masyarakat berkreasi dengan tempe sebagai pengganti daging, menghasilkan hidangan berkuah kuning sederhana tanpa kaldu, tetapi tetap menghangatkan.<br><br>Tauge ditambahkan sebagai sumber sayur karena sayuran segar sulit diperoleh. Kesederhanaan orem-orem mencerminkan ketahanan dan kreativitas masyarakat Malang dalam menghadapi keterbatasan.
+            Kini, orem-orem bukan hanya kuliner khas, tetapi juga simbol sejarah dan budaya yang patut dilestarikan.</p>
+    </div>
+
+    <div class="justify-items-center items-center my-5">
+        <h1 class="font-[Montserrat] font-bold text-[#E9D8B3] text-3xl">BAHAN DASAR</h1>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 p-2 justify-center items-center">
+        <div class="font-[Montserrat] font-bold text-sm text-[#E9D8B3] justify-items-center">
+            <img class="w-md border-white border-5 rounded-3xl" src="asset/tempe.jpg">
+            <p class="my-2">Tempe | Tempeh</p>
+        </div>
+        <div class="font-[Montserrat] font-bold text-sm text-[#E9D8B3] justify-items-center">
+            <img class="w-md border-white border-5 rounded-3xl" src="asset/ayam.jpg">
+            <p class="my-2">Ayam | Chicken</p>
+        </div>
+        <div class="font-[Montserrat] font-bold text-sm text-[#E9D8B3] justify-items-center">
+            <img class="w-md border-white border-5 rounded-3xl" src="asset/santan.jpg">
+            <p class="my-2">Santan | Coconut Milk</p>
+        </div>
+        <div class="font-[Montserrat] font-bold text-sm text-[#E9D8B3] justify-items-center">
+            <img class="w-md border-white border-5 rounded-3xl" src="asset/tauge.jpg">
+            <p class="my-2">Tauge | Bean Sprouts</p>
+        </div>
+    </div>
+
+</body>
+</html>
